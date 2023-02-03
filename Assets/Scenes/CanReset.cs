@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
-public class BallReset : MonoBehaviour
+public class CanReset : MonoBehaviour
 {
 
     void Update()
     {
         if (transform.position.y < 2)
         {
-            transform.position = new Vector3(-0.2329339f,1.774077f,-0.045101f);
+            Destroy(gameObject);
         }
+
     }
 }
